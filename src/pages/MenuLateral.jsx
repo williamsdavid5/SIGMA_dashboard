@@ -18,7 +18,7 @@ export default function MenuLateral() {
                 <div className='logoAux'>
                     <img src={LogoHorizontal} alt="" />
                 </div>
-                <h3 className='titulo'>Sistema Inteligente de Monitoramento e Segurança</h3>
+                <h3 className='titulo'>Sistema Inteligente de Gestão, Monitoramento e Alertas</h3>
                 <p className='paragrafoPadrao'>Bem vindo ao nosso sistema, veja as funcionalidades disponíveis para você.</p>
                 <div className={`menuLateral`}>
                     <NavLink
