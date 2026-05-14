@@ -1,0 +1,60 @@
+.mainGestaoEPI {
+    background-color: var(--backgroundjanela);
+    height: 100dvh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* padding: 20px; */
+}
+
+.superiorGestaoEPI {
+    border: none;
+}
+
+.menuSuperiorGestaoEPI {
+    background-color: var(--corJanela);
+    width: 100%;
+    display: flex;
+    border-bottom: solid 1px var(--bordaCor);
+}
+
+.menuSuperiorGestaoEPI a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+    color: var(--azulDestaque);
+    font-weight: bold;
+    transition: background-color ease-in-out 0.2s;
+}
+
+.menuSuperiorGestaoEPI .primeiro {
+    border-top-left-radius: 0px;
+}
+
+.menuSuperiorGestaoEPI a:hover {
+    background-color: var(--bordaCor);
+}
+
+.menuSuperiorGestaoEPI .ativado {
+    background-color: var(--azulDestaque);
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .mainGestaoEPI {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .menuSuperiorGestaoEPI a {
+        font-size: 12px;
+    }
+}

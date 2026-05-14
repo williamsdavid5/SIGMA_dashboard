@@ -1,0 +1,199 @@
+.episBlocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.blocoEpi {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform ease-in-out 0.1s;
+    width: 250px;
+    height: 320px;
+    overflow: hidden;
+}
+
+/* .blocoEpi h3 {
+    color: var(--azulDestaque);
+} */
+
+.blocoEpi:hover {
+    transform: scale(1.03);
+}
+
+.blocoEpi .auxiliarImagem {
+    background-color: white;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocoEpi .auxiliarTexto {
+    background-color: var(--corJanela);
+    color: var(--textoCor);
+    width: 100%;
+    height: 35%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    border-top: solid 1px rgb(229, 229, 229);
+    /* display: flex; */
+}
+
+.divisaoInterna {
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.blocoEpi .auxiliarTexto .esquerda {
+    width: 55%;
+    height: 100%;
+    /* padding: 10px; */
+}
+
+.blocoEpi .auxiliarTexto .direita {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.blocoEpi .auxiliarTexto h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blocoEpi img {
+    height: 65%;
+    margin: 10px 0px;
+    flex: 1;
+    object-fit: contain;
+}
+
+/* .indisponivelImg {
+    filter: grayscale(100%);
+} */
+
+.cardDisponibilidade {
+    /* width: 100%; */
+    /* flex: 1; */
+    text-align: center;
+    /* margin-top: 8px; */
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cardDisponibilidade.disponivel {
+    background-color: green;
+}
+
+.cardDisponibilidade.indisponivel {
+    background-color: red;
+}
+
+.tituloEPI {
+    color: var(--azulDestaque);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin: 5px 0px; */
+}
+
+.modalEmprestimo {
+    width: 700px;
+}
+
+.auxiliarModal {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auxiliarModal .cardDisponibilidade {
+    width: 110px;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.spanHorizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.spanHorizontal select {
+    flex: 1;
+}
+
+.auxBotaoHorizontal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.auxBotaoHorizontal button {
+    width: 50%;
+    height: 40px;
+}
+
+@media (max-width: 1000px) {
+    .episBlocos {
+        height: auto;
+        flex: none;
+    }
+
+    .modalEmprestimo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .spanHorizontal {
+        flex-direction: column;
+        align-items: first baseline;
+        margin: 0;
+    }
+
+    .spanHorizontal select {
+        width: 100%;
+    }
+
+    .auxBotaoHorizontal button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .blocoEpi {
+        width: 90%;
+    }
+
+    .modalEmprestimo h2,
+    .modalEmprestimo h1,
+    .modalEmprestimo h3 {
+        font-size: 23px;
+    }
+}
