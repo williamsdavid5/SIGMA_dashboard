@@ -15,8 +15,8 @@ function BlocoCamera({ data }) {
 
     const corValor =
         confianca < 40 ? "red" :
-            confianca < 70 ? "gold" :
-                "green";
+            confianca < 70 ? "var(--azulMaisEscuro)" :
+                "var(--azulDestaque)";
     const corRestante = "var(--bordaCor)";
 
     return (
@@ -93,8 +93,8 @@ export default function Monitoramento() {
 
     const getCorValor = (confianca) =>
         confianca < 40 ? "red" :
-            confianca < 70 ? "gold" :
-                "green";
+            confianca < 70 ? "var(--azulMaisEscuro)" :
+                "var(--azulDestaque)";
 
     const corRestante = "var(--corJanela)";
 

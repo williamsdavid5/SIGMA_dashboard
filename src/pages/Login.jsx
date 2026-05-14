@@ -1,7 +1,7 @@
 import './styles/login.css'
 import LogoCompletaAzul from '../assets/SIMS_logo_branca.png'
 import ViicLogo from '../assets/viic_logo_branca.png'
-import SIMSOlho from '../assets/SIMS_olho.png'
+import SIMSOlho from '../assets/vale1.png'
 import SIMSazul from '../assets/SIMS_logo_azul.png'
 import EPIback from '../assets/background_epi_image.jpg'
 import { useState } from 'react'
@@ -46,8 +46,8 @@ export default function Login() {
                 </div>
                 <div className='gradienteLogin'>
                     <div className='divApresentação'>
-                        <h1>Olá, Bem vindo!</h1>
-                        <p>Utilize seu login e senha para acessar as funcionalidades da plataforma. Está com problemas? <a href="">Entre em contato conosco.</a></p>
+                        <h1 style={{ color: 'white' }} >Olá, Bem vindo!</h1>
+                        <p style={{ color: 'white' }}>Utilize seu login e senha para acessar as funcionalidades da plataforma. Está com problemas? <a href="">Entre em contato conosco.</a></p>
                     </div>
                     <div className='logosCanto'>
                         <img src={LogoCompletaAzul} alt="" className='logo' />

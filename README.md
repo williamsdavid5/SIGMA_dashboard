@@ -1,4 +1,5 @@
-# SIMS - Sistema Inteligente de Monitoramento e Segurança
-Dashboard para o projeto SIMS - Sistema Inteligente de Monitoramento e Segurança, um sistema responsável por detectar o uso de EPIs em tempo real utilizando visão computacional, esta página (ainda simples), seria a responsável por mostrar os dados em um dashboard.
+# SIGMA - Sistema Inteligente de Gestão, Monitoramento e Alertas
+
+Monitoramento Inteligente de Segurança Operacional em Tempo Real, esse projeto é um exemplo de telas de dahsboard para esse sistema de monitoramento com IA para veículos.
 
 ### Ainda em desenvolvimento!! Mais informações em breve

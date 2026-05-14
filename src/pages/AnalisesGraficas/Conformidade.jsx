@@ -43,8 +43,8 @@ export default function Conformidade() {
 
     const getCorConformidade = (valor) => {
         if (valor < 60) return "red";
-        if (valor < 80) return "gold";
-        return "green";
+        if (valor < 80) return "var(--azulMaisEscuro)";
+        return "var(--azulDestaque)";
     };
 
     const dadosSazonalidadeHora = [
@@ -155,7 +155,7 @@ export default function Conformidade() {
                                 style={{
                                     fontSize: "20px",
                                     fontWeight: "bold",
-                                    fill: "#333"
+                                    fill: "var(--azulDestaque)"
                                 }}
                             />
                             <PolarAngleAxis
@@ -166,7 +166,7 @@ export default function Conformidade() {
 
                             <RadialBar
                                 dataKey="value"
-                                fill="var(--azulDetaque)"
+                                fill="var(--azulDestaque)"
                                 cornerRadius={5}
                                 background={{ fill: "var(--bordaCor)" }}
                             /> </RadialBarChart>
@@ -191,7 +191,7 @@ export default function Conformidade() {
                                 style={{
                                     fontSize: "20px",
                                     fontWeight: "bold",
-                                    fill: "#333"
+                                    fill: "var(--azulDestaque)"
                                 }}
                             />
 
@@ -203,7 +203,7 @@ export default function Conformidade() {
 
                             <RadialBar
                                 dataKey="value"
-                                fill="var(--azulDetaque)"
+                                fill="var(--azulDestaque)"
                                 cornerRadius={5}
                                 background={{ fill: "var(--bordaCor)" }}
                             /> </RadialBarChart>
@@ -323,32 +323,6 @@ export default function Conformidade() {
                 </div>
                 <div className='distribuicaoBloco evolucaoConformidade'>
                     <p><b>Evolução de conformidade (últimos 12 meses)</b></p>
-                    {/* <ResponsiveContainer width="100%" height="100%">
-                        <LineChart data={dadosEvolucaoConformidade}>
-                            <CartesianGrid strokeDasharray="3 3" />
-
-                            <XAxis dataKey="mes" />
-
-                            <YAxis domain={[80, 100]} />
-
-                            <Tooltip />
-
-                            <ReferenceLine
-                                y={95}
-                                stroke="red"
-                                strokeDasharray="5 5"
-                                label="Meta 95%"
-                            />
-
-                            <Line
-                                type="monotone"
-                                dataKey="conformidade"
-                                stroke="var(--azulDestaque)"
-                                strokeWidth={3}
-                                dot={{ r: 4 }}
-                            />
-                        </LineChart>
-                    </ResponsiveContainer> */}
                     <ResponsiveContainer width="100%" height="100%">
                         <AreaChart data={dadosEvolucaoConformidade}>
                             <CartesianGrid strokeDasharray="3 3" />

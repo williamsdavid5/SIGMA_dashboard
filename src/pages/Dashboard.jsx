@@ -38,7 +38,7 @@ export default function Dashboard() {
         analiseEstatistica
     } = useDashboard();
 
-    const COLORS = ["#0A1E43", "#243757", "#4b6185", "#879dc0"];
+    const COLORS = ["#00939a", "#00565b", "#003d40", "#003032"];
 
     const [modalImagem, setModalImagem] = useState(false);
     const [dadosOcorrencia, setDadosOcorrencia] = useState([]);

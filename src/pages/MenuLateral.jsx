@@ -27,13 +27,13 @@ export default function MenuLateral() {
                     >
                         Dashboard
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to="/GestaoEPI"
                         className={({ isActive }) => isActive ? "itemAtivado" : "itemDesativado"}
 
                     >
                         Gestão de EPIs
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink
                         to="/analises-graficas"
                         className={({ isActive }) => isActive ? "itemAtivado" : "itemDesativado"}

@@ -1,11 +1,12 @@
 .menuLateralDiv {
-    background-color: var(--corJanela);
+    background-color: var(--azulDestaque);
     width: 20%;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     border-right: solid 1px var(--bordaCor);
+    color: white !important;
 }
 
 .botaoMenu {
@@ -20,9 +21,10 @@
 }
 
 .menuLateralDiv .titulo {
-    color: var(--azulDestaque);
+    /* color: var(--azulDestaque); */
     margin: 0;
     margin-bottom: 5px;
+    color: white;
 }
 
 .menuLateral {
@@ -43,11 +45,10 @@
     text-decoration: none;
     justify-content: left;
     display: flex;
-    background-color: var(--corJanela);
-    color: var(--azulDestaque);
+    background-color: var(--azulDestaque);
     /* border: solid 1px var(--bordaCor); */
     border: none;
-    color: var(--textoCor);
+    color: var(--white);
     padding: 15px 10px;
     /* font-weight: bold; */
     border-radius: 10px;
@@ -56,17 +57,19 @@
 
 .menuLateral .itemDesativado:hover {
     background-color: var(--backgroundjanela);
+    color: var(--textoCor);
 }
 
 .menuLateral .itemAtivado {
-    background-color: var(--azulDestaque);
-    color: var(--corJanela);
+    background-color: var(--azulMaisEscuro);
+    /* color: var(--corJanela); */
 }
 
 .paragrafoPadrao {
-    color: var(--textoCor);
+    /* color: var(--textoCor); */
     margin-bottom: 10px;
     font-size: 11pt;
+    color: white;
     /* text-align: justify; */
 }
 

@@ -16,10 +16,10 @@ export default function AnalisesGraficas() {
                             to="." end
                             className={({ isActive }) => isActive ? "ativado primeiro" : "primeiro"}
                         >Conformidade</NavLink>
-                        <NavLink
+                        {/* <NavLink
                             to="epis"
                             className={({ isActive }) => isActive ? "ativado" : ""}
-                        >EPIs</NavLink>
+                        >EPIs</NavLink> */}
                         <NavLink
                             to="areas"
                             className={({ isActive }) => isActive ? "ativado" : ""}
