@@ -153,7 +153,7 @@ export default function Areas() {
                 <div className='distribuicaoBloco radaArea'>
                     {/* <p><b>Para as três áreas críticas</b></p>
                     <hr /> */}
-                    <h1>As três priores áreas</h1>
+                    <h1>Três áreas críticas</h1>
                     <hr />
                     <ResponsiveContainer width="100%" height="100%">
                         <RadialBarChart

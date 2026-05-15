@@ -1,5 +1,5 @@
 import './styles/modalImg.css'
-import ImagemExemplo from '../assets/cameraImagemExemplo.jpg'
+import ImagemExemplo from '../assets/cameraImagemExemplo.png'
 import { useEffect } from 'react'
 
 export default function ModalImg({ setModalImagem, dadosOcorrencia }) {

@@ -76,8 +76,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--backgroundjanela);
-  color: var(--azulMaisEscuro);
+  background-color: var(--azulMaisEscuro);
+  /* color: var(--azulMaisEscuro); */
   border: solid 1px var(--azulMaisEscuro);
 }
 
